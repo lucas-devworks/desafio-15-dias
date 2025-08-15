@@ -6,13 +6,24 @@
         <title>Document</title>
     </head>
 <body>
-    <ul>
-        <li>teste</li>
-        <li>teste</li>
-        <li>teste</li>
-        <li>teste</li>
-        <li>teste</li>
-    </ul>
-    
+    <a href="./listarTarefa.html">ACESSAR AS TAREFAS</a>
+
+    <div>
+        <h1>Cadastro de tarefas</h1>
+        <div>
+            <label>Título da tarefa</label><br>
+            <input id="titulo" placeholder="título de tarefa"/>
+        </div>
+        <div>
+            <label>Descrição da tarefa</label><br>
+            <textarea id="descricao" placeholder="descrição da terafa"></textarea>    
+        </div>
+        <button onclick="criarTarefa()">Cadastrar</button>
+    </div>
+    <p id="mensagem"></p>
+
+
+
+    <script src="/script.js"></script>
 </body>
 </html>
