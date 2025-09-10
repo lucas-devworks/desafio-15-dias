@@ -3,24 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Cadastro de tarefas</title>
     </head>
+    <link rel="stylesheet" href="style.css"/>
 <body>
-    <a href="./listarTarefa.html">ACESSAR AS TAREFAS</a>
-
+    
     <div>
         <h1>Cadastro de tarefas</h1>
+        
+        <a href="./listarTarefa.html">ACESSAR AS TAREFAS</a>
+        
         <div>
             <label>Título da tarefa</label><br>
-            <input id="titulo" placeholder="título de tarefa"/>
+            <input type="text" id="titulo" placeholder="título de tarefa"/>
         </div>
         <div>
             <label>Descrição da tarefa</label><br>
             <textarea id="descricao" placeholder="descrição da terafa"></textarea>    
         </div>
         <button onclick="criarTarefa()">Cadastrar</button>
+
+         <p id="mensagem"></p>
+         <p id="mensagemFracasso"></p>
     </div>
-    <p id="mensagem"></p>
+   
 
 
 
